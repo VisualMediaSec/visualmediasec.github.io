@@ -19,7 +19,7 @@
 #title {
 	float: left;
 	text-decoration: none;
-	font: 13px arial,verdana,helvetica,sans-serif;
+	font: 15px arial,verdana,helvetica,sans-serif;
 	font-weight: 600;
 	color: #ddd;
 	padding-top: 27px;
@@ -54,7 +54,7 @@ ul#list-nav li a {
 	color: #ddd;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font: 12px arial,verdana,helvetica,sans-serif;
+	font: 18px arial,verdana,helvetica,sans-serif;
 	position: relative;
 }
 
