@@ -9,6 +9,7 @@ var navbar =
 '</div>',
 '<div id="title">',
 '<h1>Welcome to Ye Yao\'s Homepage</h1>',
+//'<h4>School of Cyberspace, Hangzhou Dianzi University</h4>',
 '</div>',
 '</div>',
 
