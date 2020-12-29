@@ -4,12 +4,14 @@
 var navbar = 
 // First, draw the logo image and the title
 ['<div id="head">',
-'<div id="logo">',
-'<a href="home.html"></a>',
-'</div>',
+//'<div id="logo">',
+//'<a href="home.html"></a>',
+//'</div>',
 '<div id="title">',
-'<h1>Welcome to Ye Yao\'s Homepage</h1>',
-//'<h4>School of Cyberspace, Hangzhou Dianzi University</h4>',
+//'<h1>姚晔	  博士、副教授</h1>',
+'<h1>Ye Yao, Associate Professor</h1>',
+//'<h4>杭州电子科技大学 网络空间安全学院</h4>',
+'<h4>School of Cyberspace, Hangzhou Dianzi University</h4>',
 '</div>',
 '</div>',
 
