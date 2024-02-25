@@ -84,6 +84,7 @@
 
 		// Sidebar.
 			var $sidebar = $('#sidebar'),
+				$mainboay = $('#main'),
 				$sidebar_inner = $sidebar.children('.inner');
 
 			// Inactive by default on <= large.
@@ -107,13 +108,12 @@
 					$('<a href="#sidebar" class="toggle">Toggle</a>')
 						.appendTo($sidebar)
 						.on('click', function(event) {
-
 							// Prevent default.
 								event.preventDefault();
 								event.stopPropagation();
-
 							// Toggle.
 								$sidebar.toggleClass('inactive');
+								$mainboay.toggleClass('add_margin_left');
 
 						});
 
@@ -121,9 +121,13 @@
 
 			// Events.
 
+				// 刚加载的时候判断sidebar是否显示
+				if ($sidebar.hasClass('inactive')) {
+					$sidebar.toggleClass('inactive');
+					$mainboay.toggleClass('add_margin_left');
+				}
 				// Link clicks.
 					$sidebar.on('click', 'a', function(event) {
-
 						// >large? Bail.
 							if (!skel.breakpoint('large').active)
 								return;
@@ -142,7 +146,7 @@
 								return;
 
 						// Hide sidebar.
-							$sidebar.addClass('inactive');
+							// $sidebar.addClass('inactive');
 
 						// Redirect to href.
 							setTimeout(function() {
@@ -176,7 +180,7 @@
 								return;
 
 						// Deactivate.
-							$sidebar.addClass('inactive');
+							// $sidebar.addClass('inactive');
 
 					});
 
